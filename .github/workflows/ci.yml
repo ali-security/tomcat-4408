@@ -15,10 +15,10 @@ name: Smoke Test
 on:
   push:
     branches:
-      - main
+      - 10.1.x
   pull_request:
     branches:
-      - main
+      - 10.1.x
 
 env:
   LC_ALL: en_US.UTF-8
