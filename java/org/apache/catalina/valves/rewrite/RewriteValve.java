@@ -349,6 +349,7 @@ public class RewriteValve extends ValveBase {
              */
 
             // Step 1. Encode URL for processing by the re-write rules.
+            CharSequence urlRewriteEncoded = encodeForRewrite(urlDecoded);
             CharSequence host = request.getServerName();
             boolean rewritten = false;
             boolean done = false;
